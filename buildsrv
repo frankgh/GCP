@@ -1,7 +1,9 @@
 #!/bin/bash
 zone=us-east1-b
 
-wget https://raw.githubusercontent.com/maprpartners/GCP/master/install.sh -O /tmp/install.sh
+curl https://raw.githubusercontent.com/maprpartners/GCP/master/install.sh > /tmp/install.sh
+#wget https://raw.githubusercontent.com/maprpartners/GCP/master/install.sh -O /tmp/install.sh
+
 for i in {1..5}
 do
 gcloud compute instances create --boot-disk-auto-delete --boot-disk-size=40GB --machine-type=n1-standard-16 --image=centos-7 --network=maprvpc --subnet=maprvpc --zone=${zone} --metadata-from-file startup-script=/tmp/install.sh maprvm$i
