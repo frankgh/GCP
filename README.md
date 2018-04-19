@@ -46,7 +46,7 @@
 
 6. Start exploring MapR:
    
-   a. Once the installation is complete, you can go to https://[IP of first VM]:8443, login as mapr/mapr to access the MapR Control Service UI
+   a. Once the installation is complete, you can go to https://[IP of first VM]:8443, login as mapr/mapr to access the MapR Control System (MCS) UI
 
    b. You can also ssh in to any VM to start exploring MapR. 
  
