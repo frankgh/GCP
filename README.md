@@ -63,6 +63,17 @@
 
       https://github.com/maprpartners/lenovo-demo/blob/master/readme.pdf
 
+      You will need these environment info handy:
+
+      MAPR_CLDB_HOSTS :  Use the internap IP of the first MapR VM (maprvm1)
+
+      CL_NAME : Use mapr601-500
+
+      HOST_IP : Use the internal IP of the edge VM (mapredge)
+
+      Also, you can go to the installer page to see what services are installed in the cluster:
+
+      https://[IP of the first VM]/#:9443
 
 ** Important! Please make sure that you change your passwords for user root and mapr immediately after you ssh into the VMs by issuing 'passwd" command to enforce good security practice.
    
