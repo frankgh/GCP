@@ -38,7 +38,7 @@
       
    b. Install MapR cluster by executing the following command
    
-      curl -L https://github.com/maprpartners/GCP/blob/master/install_mapr | bash
+      curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/install_mapr | bash
      
       Installation takes about 20 minutes, you can go to https://<IP of first VM>:9443 to monitor the progress of the installation. 
 
