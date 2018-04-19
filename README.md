@@ -1,9 +1,12 @@
 # GCP
 
-1. Scripts that install a demo five node MapR cluster on Google Cloud Platform (us-east1 region)
-   Scripts can be customized to fit your own specific GCP environment needs
+1. Scripts that install a demo five node MapR cluster on Google Cloud 
+   Platform in us-east1 region)
+   The scripts can be customized to fit your own specific GCP environment needs
 
-2. Each node is based on machine type: n1-standard-16, with 3 x 120GB SSDs per node as data drives
+2. Each node is based on machine type: 
+   n1-standard-16, with 3 x 120GB SSDs per node as data drives
+   
    Make sure you have enough CPU/DISKS quotas on us-east1 region
    vCPUs >= 80, DISKs >= 1800GB
 
