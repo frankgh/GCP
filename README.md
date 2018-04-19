@@ -2,6 +2,7 @@
 
 1. Scripts that install a demo five node MapR cluster on Google Cloud 
    Platform in us-east1 region)
+
    The scripts can be customized to fit your own specific GCP environment needs
 
 2. Each node is based on machine type: 
