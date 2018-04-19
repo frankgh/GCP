@@ -1,7 +1,7 @@
 wget http://package.mapr.com/releases/installer/redhat/mapr-setup.sh
 sh mapr-setup.sh -y
-echo sleeping for 20 seconds...
-sleep 20
+echo sleeping for 10 seconds...
+sleep 10
 wget https://raw.githubusercontent.com/maprpartners/GCP/master/template-converged-601-500.yaml?token=AiH2BlsBXXd6EWoO2_USlrrPvdW80e6uks5a4fHswA%3D%3D -O /tmp/template-converged-601-500.yaml
 chmod 755 /tmp/template-converged-601-500.yaml
 
