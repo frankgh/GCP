@@ -56,9 +56,11 @@
 7. Extra: run Real-Time Twitter analytics demo with Data Science Refinery on the MapR cluster 
    
    a. Spin up an edge node (mapredge) by executing the following command on the machine that has SDK installed:
+  
       curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/buildedge | bash
 
    b. Follow this instruction to complete the setup
+
       https://github.com/maprpartners/lenovo-demo/blob/master/readme.pdf
 
 
