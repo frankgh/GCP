@@ -13,16 +13,16 @@
 
 3. Prerequisites:
  
-   a. You have sign up for an account on GCP (https://cloud.google.com)
+   a. You have signed up for an account on GCP (https://cloud.google.com)
    
    b. Install Cloud SDK on your local machine (https://cloud.google.com/sdk/downloads)
    
-   c. Make sure that you can successfully execute gcloud command on your local machine after the
+   c. Make sure that you can successfully execute gcloud commands on your local machine after the
       SDK installation
 
 4. Installation steps: 
 
-   a. Create a VPC (maprvpc) and create firewall rules by executing this command on your local machine with Cloud SDK installed:
+   a. Create a VPC (maprvpc) and firewall rules by executing this command on your local machine with Cloud SDK installed:
    
       curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/vpc.sh | bash
 
