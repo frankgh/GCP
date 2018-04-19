@@ -1,8 +1,13 @@
 #!/bin/bash
 zone=us-east1-b
 
+curl=`which curl | wc -l`
+if [[ $curl -eq 0 ]]; then
+  echo "curl not found, please install curl then re-run this script"
+  exit
+fi
+
 curl https://raw.githubusercontent.com/maprpartners/GCP/master/install.sh > /tmp/install.sh
-#wget https://raw.githubusercontent.com/maprpartners/GCP/master/install.sh -O /tmp/install.sh
 
 for i in {1..5}
 do
