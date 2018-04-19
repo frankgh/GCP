@@ -30,4 +30,4 @@ gcloud compute instances  attach-disk maprvm$i --disk=maprvm$i-disk$j --zone=${z
 done
 done
 
-gcloud compute instances list --zone=${zone}
+gcloud compute instances list --zones=${zone}
