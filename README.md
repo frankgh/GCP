@@ -23,16 +23,16 @@
 
    a. Create a VPC (maprvpc) and create firewall rules by executing this command on your local machine with Cloud SDK installed:
    
-      curl -L https://raw.githubusercontent.com/jsunmapr/pacc-mssql/master/vpc.sh | bash
+      curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/vpc.sh | bash
 
    
    b. Create the VMs for MapR cluster by executing the following command
    
-      curl -L https://raw.githubusercontent.com/jsunmapr/pacc-mssql/master/build_srv | bash
+      curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/buildsrv | bash
 
    
    c. Install MapR cluster by executing the following command
    
-      curl -L https://raw.githubusercontent.com/jsunmapr/pacc-mssql/master/install_mapr | bash
+      curl -L https://github.com/maprpartners/GCP/blob/master/install_mapr | bash
       
     
