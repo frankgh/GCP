@@ -1,4 +1,4 @@
-# GCP
+# Deploying a MapR cluster on Google Compute Platform
 
 1. Scripts that install a demo five node MapR cluster (version 6.0.1 and MEP version 5.0.0) on Google Cloud 
    Platform in us-east1 region)
