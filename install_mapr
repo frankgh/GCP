@@ -1,0 +1,24 @@
+clush -a service mapr-warden stop
+clush -a service mapr-zookeeper stop
+clush -a yum -y erase mapr\*
+clush -a service mapr-installer stop
+clush -a yum -y erase mapr-installer
+clush -a rm -rf /etc/yum.repos.d/mapr_*.repo
+clush -a rm -rf /opt/mapr
+clush -a service mariadb stop
+clush -a yum -y erase mariadb\*
+clush -a rm -rf /var/lib/mysql
+clush -a yum-complete-transaction
+clush -a yum clean all
+clush -a yum makecache
+clush -a rm -rf /etc/yum.repos.d/mapr*
+
+rm -rf mapr-setup.sh
+wget http://package.mapr.com/releases/installer/redhat/mapr-setup.sh
+sh mapr-setup.sh -y
+echo sleeping for 20 seconds...
+sleep 20
+wget https://raw.githubusercontent.com/jsunmapr/tweets-dsr-demo/master/template-converged-601-500.yaml -O /tmp/template-converged-601-500.yaml
+chmod 755 /tmp/template-converged-601-500.yaml
+
+su - mapr -c "/opt/mapr/installer/bin/mapr-installer-cli install -fnv -t /tmp/template-converged-601-500.yaml -u mapr:mapr@localhost:9443"
