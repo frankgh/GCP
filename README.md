@@ -40,13 +40,13 @@
    
       curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/install_mapr | bash
      
-      Installation takes about 20 minutes, you can go to https://<IP of first VM>:9443 to monitor the progress of the installation. 
+      Installation takes about 20 minutes, you can go to https://[IP of first VM]:9443 to monitor the progress of the installation. 
 
       login: mapr/mapr 
 
 6. Start exploring MapR:
    
-   a. Once the installation is complete, you can go to https://<IP of first VM>:8443, login as mapr/mapr to access the MapR Control Service UI
+   a. Once the installation is complete, you can go to https://[IP of first VM]:8443, login as mapr/mapr to access the MapR Control Service UI
 
    b. You can also ssh in to any VM to start exploring MapR. 
  
