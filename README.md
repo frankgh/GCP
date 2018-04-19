@@ -52,5 +52,15 @@
  
    c. Also check out MapR online documentation at https://maprdocs.mapr.com/home/
 
-7. Important! Please make sure that you change your passwords for user root and mapr immediately after you ssh into the VMs by issuing 'passwd" command to enforce good security practice.
-    
+
+7. Extra: run Real-Time Twitter analytics demo with Data Science Refinery on the MapR cluster 
+   
+   a. Spin up an edge node (mapredge) by executing the following command on the machine that has SDK installed:
+      curl -L https://raw.githubusercontent.com/maprpartners/GCP/master/install_mapr | bash
+
+   b. Follow this instruction to complete the setup
+      https://github.com/maprpartners/lenovo-demo/blob/master/readme.pdf
+
+
+** Important! Please make sure that you change your passwords for user root and mapr immediately after you ssh into the VMs by issuing 'passwd" command to enforce good security practice.
+   
