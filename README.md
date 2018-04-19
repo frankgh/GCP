@@ -33,7 +33,7 @@
 
 5. MapR installation (on the first VM: maprvm1): 
    
-   a. Now ssh into your first VM (maprvm1) as root, you can find its IP by executing "gcloud compute instances list --zone=us-east1-b"
+   a. Now ssh into your first VM (maprvm1) as root, you can find its IP by executing "gcloud compute instances list --zones=us-east1-b"
       the password is 'mapr'
       
    b. Install MapR cluster by executing the following command
