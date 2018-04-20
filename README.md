@@ -1,4 +1,4 @@
-# Deploying a MapR cluster on Google Compute Platform
+# Deploying a MapR cluster on Google Compute Platform   (updated on 4/19/2018 by James Sun, MapR Technologies)
 
 1. Scripts that install a demo five node MapR cluster (version 6.0.1 and MEP version 5.0.0) on Google Cloud 
    Platform in us-east1 region)
