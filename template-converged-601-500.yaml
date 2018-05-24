@@ -10,8 +10,6 @@ config:
 
   security: True
   #provider:
-  #  id: AZURE
-  #environment: gce
   #DOC user id, must be present for every host defined above (required)
   ssh_id: root
   ssh_password: mapr
