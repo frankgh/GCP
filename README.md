@@ -77,5 +77,5 @@
 
       https://[IP of the first VM]/#:9443
 
-<span style="color: red">** Important! Please make sure that you change your passwords for user root and mapr immediately after you ssh into the VMs by issuing 'passwd" command to enforce good security practice. </span>
+** Important! Please make sure that you change your passwords for user root and mapr immediately after you ssh into the VMs by issuing 'passwd" command to enforce good security practice.
    
