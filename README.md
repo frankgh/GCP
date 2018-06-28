@@ -1,4 +1,4 @@
-# Deploying a MapR cluster on Google Compute Platform   
+# Deploying a MapR cluster on Google Cloud Platform   
 
 (updated on 4/19/2018 by James Sun, MapR Technologies)
 
