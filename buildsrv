@@ -1,5 +1,5 @@
 #!/bin/bash
-zone=us-east1-b
+zone=us-central1-a
 
 curl=`which curl | wc -l`
 if [[ $curl -eq 0 ]]; then
@@ -11,10 +11,14 @@ curl https://raw.githubusercontent.com/maprpartners/GCP/master/install.sh > /tmp
 
 for i in {1..5}
 do
-gcloud compute instances create --boot-disk-auto-delete --boot-disk-size=40GB --machine-type=n1-standard-16 --image=centos-7 --network=maprvpc --subnet=maprvpc --zone=${zone} --metadata-from-file startup-script=/tmp/install.sh maprvm$i
+gcloud compute instances create --boot-disk-auto-delete \
+  --boot-disk-size=40GB --machine-type=n1-standard-16 \
+  --image=centos-7 --network=bosh-network --subnet=dynamic \
+  --zone=${zone} --metadata-from-file startup-script=/tmp/install.sh maprvm$i
 sleep 10
-gcloud compute instances add-tags maprvm$i --zone=${zone} --tags=allowmapr
-gcloud compute instances add-tags maprvm$i --zone=${zone} --tags=allowmaprint
+gcloud compute instances add-tags maprvm$i --zone=${zone} --tags=bosh-network
+gcloud compute instances add-tags maprvm$i --zone=${zone} --tags=outbound-through-nat
+gcloud compute instances add-tags maprvm$i --zone=${zone} --tags=tag-concourse-dynamic
 done
 
 #gcloud compute instances list
