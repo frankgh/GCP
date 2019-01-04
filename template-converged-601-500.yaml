@@ -6,9 +6,9 @@ environment:
 config:
   #DOC list of hosts we want to install packages on (required)
   #DOC installer host must be one of the hosts in this list
-  hosts: [maprvm1,maprvm2,maprvm3,maprvm4,maprvm5]
+  hosts: [maprvm1]
 
-  security: True
+  security: False
   #provider:
   #DOC user id, must be present for every host defined above (required)
   ssh_id: root
