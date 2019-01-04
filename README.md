@@ -2,7 +2,7 @@
 
 (updated on 1/4/2019 by Francisco Guerrero, Pivotal)
 
-1. Scripts that install a demo single node MapR cluster (version 5.2.2 and MEP version 5.0.0) on Google Cloud 
+1. Scripts that install a demo single node MapR cluster (version 5.2.2 and MEP version 3.0.4) on Google Cloud 
    Platform in us-central1 region)
 
    The scripts can be customized to fit your own specific GCP environment needs
