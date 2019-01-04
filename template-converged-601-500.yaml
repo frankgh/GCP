@@ -25,4 +25,4 @@ config:
   cluster_name: mapr522-304
   #DOC hashmap of services to be installed (optional)
   services:
-    template-05-converged:
+    template-10-hadoop:
